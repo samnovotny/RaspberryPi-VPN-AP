@@ -27,9 +27,9 @@ And set the following:
 
 Follow instructions for Linux from [Mullvad website](https://mullvad.net/en/help/easy-wireguard-mullvad-setup-linux/).
 
-`sudo apt update && sudo apt install openresolv wireguard iptables`
-`sudo mv gb-lon-wg-002.conf /etc/wireguard`
-`sudo chown root:root -R /etc/wireguard && sudo chmod 600 -R /etc/wireguard`
+`sudo apt update && sudo apt install openresolv wireguard iptables` 
+`sudo mv gb-lon-wg-002.conf /etc/wireguard` 
+`sudo chown root:root -R /etc/wireguard && sudo chmod 600 -R /etc/wireguard` 
 
 ### Check vpn working.
 
