@@ -27,6 +27,18 @@ And set the following:
 
 Follow instructions for Linux from [Mullvad website](https://mullvad.net/en/help/easy-wireguard-mullvad-setup-linux/).
 
+`sudo apt update && sudo apt install openresolv wireguard iptables`
+`sudo mv gb-lon-wg-002.conf /etc/wireguard`
+`sudo chown root:root -R /etc/wireguard && sudo chmod 600 -R /etc/wireguard`
+
+### Check vpn working.
+
+`sudo su`
+`cd /etc/wireguard`
+`wg-quick up gb-lon-wg-002`
+`curl https://am.i.mullvad.net/connected`
+`wg-quick down gb-lon-wg-002` or `wg`
+
 ## Configure wireless access point routing
 
 Note: remember the name of vpn channel created above, eg: **gb-lon-wg-002**
