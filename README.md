@@ -31,7 +31,7 @@ Follow instructions for Linux from [Mullvad website](https://mullvad.net/en/help
 `sudo mv gb-lon-wg-002.conf /etc/wireguard`  
 `sudo chown root:root -R /etc/wireguard && sudo chmod 600 -R /etc/wireguard`  
 
-### Check vpn working.
+Check vpn working.
 
 `sudo su`  
 `cd /etc/wireguard`  
