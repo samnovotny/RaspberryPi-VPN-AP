@@ -33,11 +33,11 @@ Follow instructions for Linux from [Mullvad website](https://mullvad.net/en/help
 
 ### Check vpn working.
 
-`sudo su`
-`cd /etc/wireguard`
-`wg-quick up gb-lon-wg-002`
-`curl https://am.i.mullvad.net/connected`
-`wg-quick down gb-lon-wg-002` or `wg`
+`sudo su`  
+`cd /etc/wireguard`  
+`wg-quick up gb-lon-wg-002`  
+`curl https://am.i.mullvad.net/connected`  
+`wg-quick down gb-lon-wg-002` or `wg`  
 
 ## Configure wireless access point routing
 
