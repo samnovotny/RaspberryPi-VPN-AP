@@ -31,7 +31,7 @@ Follow instructions for Linux from [Mullvad website](https://mullvad.net/en/help
 
 Secure copy (scp) files from Mac to Raspberry  
 
-'scp -r mullvad_wireguard_linux_gb_all pi@192.168.1.123:/home/pi'  
+`scp -r mullvad_wireguard_linux_gb_all pi@192.168.1.123:/home/pi`  
 `sudo mv gb-lon-wg-002.conf /etc/wireguard`  
 `sudo chown root:root -R /etc/wireguard && sudo chmod 600 -R /etc/wireguard`  
 
