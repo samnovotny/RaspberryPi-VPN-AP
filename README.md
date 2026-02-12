@@ -7,8 +7,8 @@ Instructions to configure any old RaspberryPi (with ethernet and WiFi) to be an 
 
 ## Update to latest versions
 
-`sudo apt get update`  
-`sudo apt get upgrade`
+`sudo apt update`  
+`sudo apt upgrade`
 
 ## Configure a static IP for the eth0 interface
 ### (Choose appropriate values, must match local lan, e.g.192.168.x.x)
