@@ -50,7 +50,7 @@ Note: remember the name of vpn channel created above, eg: **gb-lon-wg-002**
 `sudo iptables -t nat -A POSTROUTING -o gb-lon-wg-002 -j MASQUERADE`  
 `sudo iptables -A FORWARD -i gb-lon-wg-002 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT`  
 `sudo iptables -A FORWARD -i wlan0 -o gb-lon-wg-002 -j ACCEPT`  
-`sudo apt-get install -y iptables-persistent`  
+`sudo apt install -y iptables-persistent` (This pops up a couple of questions to save configs - say YES)  
 
 ## Make wireless access point
 
