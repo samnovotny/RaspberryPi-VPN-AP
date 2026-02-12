@@ -40,8 +40,8 @@ Check vpn working.
 `sudo su`  
 `cd /etc/wireguard`  
 `wg-quick up gb-lon-wg-002`  
-`curl https://am.i.mullvad.net/connected`  
-`wg-quick down gb-lon-wg-002` or `wg`  
+`curl https://am.i.mullvad.net/connected` or `wg`  
+`wg-quick down gb-lon-wg-002`  
 
 ## Configure wireless access point routing
 
