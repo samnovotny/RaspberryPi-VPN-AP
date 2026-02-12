@@ -7,11 +7,11 @@ Instructions to configure any old RaspberryPi (with ethernet and WiFi) to be an 
 
 ## Update to latest versions
 
-`sudo apt-get update`  
-`sudo apt-get upgrade`
+`sudo apt get update`  
+`sudo apt get upgrade`
 
 ## Configure a static IP for the eth0 interface
-### (Choose appropriate values, must match local lan)
+### (Choose appropriate values, must match local lan, e.g.192.168.x.x)
 
 `sudo nano /etc/dhcpcd.conf`
 
@@ -19,15 +19,19 @@ And set the following:
 
 `# Static IP eth0 configuration:`  
 `interface eth0`  
-`static ip_address=192.168.0.10/24`  
-`static routers=192.168.0.1`  
-`static domain_name_servers=192.168.0.1`  
+`static ip_address=192.168.1.123/24`  
+`static routers=192.168.1.1`  
+`static domain_name_servers=192.168.1.1`  
 
 ## Install Mullvad VPN
 
 Follow instructions for Linux from [Mullvad website](https://mullvad.net/en/help/easy-wireguard-mullvad-setup-linux/).
 
-`sudo apt update && sudo apt install openresolv wireguard iptables`  
+`sudo apt install openresolv wireguard iptables`  
+
+Secure copy (scp) files from Mac to Raspberry  
+
+'scp -r mullvad_wireguard_linux_gb_all pi@192.168.1.123:/home/pi'  
 `sudo mv gb-lon-wg-002.conf /etc/wireguard`  
 `sudo chown root:root -R /etc/wireguard && sudo chmod 600 -R /etc/wireguard`  
 
