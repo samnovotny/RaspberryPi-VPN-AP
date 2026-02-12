@@ -13,9 +13,11 @@ Instructions to configure any old RaspberryPi (with ethernet and WiFi) to be an 
 ## Configure a static IP for the eth0 interface
 ### (Choose appropriate values, must match local lan, e.g.192.168.x.x)
 
-Use **nmtui** to set the static address and enable wifi radio
+Use **nmtui** to set the static addresses (ip, gateway and DNS server) and enable wifi radio
 
-Use the following **nmcli** command to create a hotspot:
+## Create hotspot (access point)
+
+Use the following **nmcli** command to create a hotspot
 
 `sudo nmcli d wifi hotspot ifname wlan0 ssid <SSID> password <PASSWORD>`  
 
