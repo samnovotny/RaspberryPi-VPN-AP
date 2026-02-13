@@ -47,7 +47,7 @@ Check vpn working.
 `sudo su`  
 `cd /etc/wireguard`  
 `wg-quick up gb-lon-wg-002`  
-`curl https://am.i.mullvad.net/connected` (or 'sudo wg`)  
+`curl https://am.i.mullvad.net/connected` (or `sudo wg`)  
 `wg-quick down gb-lon-wg-002`  
 
 Start the service automatically
